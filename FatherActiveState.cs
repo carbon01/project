@@ -7,15 +7,11 @@ using UnityEngine.AI;
 public class PlayerActiveState : PlayerState
 {
 
-    public PlayerActiveState(PlayerController playerController) :
-        base(playerController) { }
+    public PlayerActiveState(PlayerController playerController) : base(playerController) { }
 
     public override void Entry() { }
 
-    public override void GetDestination(Vector3 tappedPosition)
-    {
-        playerController.FindTargetPath(tappedPosition);
-    }
+    public override void GetDestination(Vector3 tappedPosition) { playerController.FindTargetPath(tappedPosition); }
 
     public override void HandleTrigger(Collider other) { }
 
