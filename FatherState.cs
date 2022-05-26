@@ -11,13 +11,9 @@ public abstract class PlayerState
     }
 
     public abstract void Entry();
-
     public abstract void GetDestination(Vector3 tappedPosition);
-
     public abstract void HandleTrigger(Collider other);
-
     public abstract void RunAndShoot();
-
     public abstract void UpdateCameraAndLine();
 
 }
